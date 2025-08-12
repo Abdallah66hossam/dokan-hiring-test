@@ -17,11 +17,11 @@ const Method = () => {
   };
 
   return (
-    <section className="border-[.5px] rounded-xl border-[#444444] p-4 bg-[#2C2C2C]">
-      <h2 className="mb-[14px] text-[#D6D6D6] font-medium leading-6">
+    <section className="border border-[#444444] rounded-xl p-4 bg-[#2C2C2C]">
+      <h2 className="mb-3 sm:mb-4 text-[#D6D6D6] font-medium leading-6 text-sm sm:text-base">
         Payment Method
       </h2>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
         {data.map((c) => (
           <div
             key={c.id}
@@ -29,10 +29,10 @@ const Method = () => {
             onClick={() => handleSelectType(c.id)}
           >
             <div
-              className={`p-1 rounded-[6px] h-20 duration-300 ${
+              className={`p-1 rounded-md h-20 duration-300 ${
                 c.id === type
                   ? "border border-[#9F98FF]"
-                  : "border-[#606060] border-[.7px]"
+                  : "border border-[#606060]"
               }`}
             >
               <div className="bg-[#464646] h-full flex items-center justify-center rounded-[4px]">
@@ -46,7 +46,7 @@ const Method = () => {
                 />
               </div>
             </div>
-            <h3 className="text-[12px] leading-[18px] mt-2 text-center text-[#D6D6D6]">
+            <h3 className="text-[12px] sm:text-sm leading-[18px] mt-2 text-center text-[#D6D6D6]">
               {c.name}
             </h3>
           </div>

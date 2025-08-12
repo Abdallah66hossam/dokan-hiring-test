@@ -6,17 +6,20 @@ import OrderSummary from "./OrderSummary";
 
 const Payment = () => {
   return (
-    <div className="relative bg-[#111111] min-h-screen py-[100px] 2xl:py-[176px] overflow-hidden">
-      <section className="card-sh mx-auto w-[78%] h-[672px] relative z-50 rounded-[15.41px] p-[48px] ">
+    <div className="relative bg-[#111111] min-h-screen py-[60px] sm:py-[80px] xl:py-[100px] 2xl:py-[176px] overflow-hidden">
+      <section className="card-sh mx-auto w-[95%] sm:w-[90%] xl:w-[78%] max-w-[1200px] h-auto relative z-50 rounded-[15px] p-6 sm:p-8 xl:p-[48px]">
         <Header />
-        <div className="flex items-center gap-4 mt-6">
-          <div className="w-[64%]">
+
+        {/* Main content layout */}
+        <div className="flex flex-col xl:flex-row items-start xl:items-center gap-6 mt-6">
+          <div className="w-full xl:w-[64%]">
             <Method />
             <Form />
           </div>
           <OrderSummary />
         </div>
-        <span className="text-[#C2C2C2] flex justify-center font-secondary mt-8">
+
+        <span className="text-[#C2C2C2] flex justify-center font-secondary mt-8 text-sm sm:text-base text-center">
           © 2025 Dokan Inc. All rights reserved.
         </span>
       </section>
