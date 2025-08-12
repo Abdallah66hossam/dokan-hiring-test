@@ -43,3 +43,19 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+.bg-blur {
+  backdrop-filter: blur(4px);
+}
+.text-total {
+  background: linear-gradient(270deg, #bab6ff 20.97%, #7066ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-submit-btn {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 7.29%,
+      rgba(255, 255, 255, 0) 65.62%
+    ),
+    linear-gradient(0deg, #4a24f5, #4a24f5);
+}

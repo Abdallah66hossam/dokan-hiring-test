@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "./Header";
 import Method from "./Method";
 import Form from "./Form";
+import OrderSummary from "./OrderSummary";
 
 const Payment = () => {
   return (
@@ -13,6 +14,7 @@ const Payment = () => {
             <Method />
             <Form />
           </div>
+          <OrderSummary />
         </div>
         <span className="text-[#C2C2C2] flex justify-center font-secondary mt-8">
           © 2025 Dokan Inc. All rights reserved.
