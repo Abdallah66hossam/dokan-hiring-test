@@ -10,7 +10,7 @@ const data = [
 ];
 
 const Method = () => {
-  const [type, setType] = useState(0);
+  const [type, setType] = useState(1);
 
   const handleSelectType = (id: number) => {
     setType(id);
