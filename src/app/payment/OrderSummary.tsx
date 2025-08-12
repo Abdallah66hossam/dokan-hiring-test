@@ -3,7 +3,7 @@ import React from "react";
 const OrderSummary = () => {
   return (
     <section className="w-full xl:w-[36%] mt-6 xl:mt-0 animate-slide-in-right animate-delay-300">
-      <div className="border border-[#444444] bg-blur p-4 sm:p-6 rounded-xl xl:h-[389px]">
+      <div className="border border-[#444444] bg-blur p-4 sm:p-6 rounded-xl xl:h-[389px] card-sh">
         <h3 className="text-center font-medium text-[#D6D6D6] leading-6 text-sm sm:text-base">
           Total Amount
         </h3>

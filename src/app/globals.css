@@ -59,6 +59,17 @@ input[type="number"] {
     ),
     linear-gradient(0deg, #4a24f5, #4a24f5);
 }
+.bg-submit-btn:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.4) 7.29%,
+      rgba(255, 255, 255, 0.1) 65.62%
+    ),
+    linear-gradient(0deg, #5a34ff, #5a34ff);
+  box-shadow: 0 0 12px rgba(74, 36, 245, 0.6);
+  transform: translateY(-1px);
+  transition: 500ms;
+}
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0; /* still hide */
   cursor: pointer;
