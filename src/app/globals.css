@@ -1,5 +1,35 @@
 @import "tailwindcss";
 
+:root {
+  --font-primary: var(--font-inter);
+  --font-secondary: var(--font-plus-jakarta);
+}
 body {
-  font-family: Inter, sans-serif;
+  font-family: var(--font-primary);
+}
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+.card-sh {
+  box-shadow: 0px 46.23px 42.93px 13.21px #00000014;
+  box-shadow: 0px -1.1px 2.2px 0px #0000000d inset;
+  backdrop-filter: blur(140.8977508544922px);
+  border: 0.92px solid;
+  border-image-source: linear-gradient(
+    134.12deg,
+    rgba(255, 255, 255, 0.2) -8.98%,
+    rgba(255, 255, 255, 0) 46.93%,
+    rgba(255, 255, 255, 0) 74.89%,
+    rgba(255, 255, 255, 0.2) 102.85%
+  );
+  background: linear-gradient(
+    139.16deg,
+    rgba(255, 255, 255, 0.1) 20.8%,
+    rgba(255, 255, 255, 0.01) 85.87%
+  );
+}
+.text-header {
+  background: linear-gradient(to bottom, #ffffff 48.53%, #6d6d6d 84.77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

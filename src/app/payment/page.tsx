@@ -1,8 +1,17 @@
 import Image from "next/image";
+import Header from "./Header";
 
 const Payment = () => {
   return (
-    <div className="relative bg-[#111111] h-screen">
+    <div className="relative bg-[#111111] min-h-screen py-[100px] 2xl:py-[176px] overflow-hidden">
+      <section className="card-sh mx-auto w-[78%] h-[672px] relative z-50 rounded-[15.41px] p-[48px] ">
+        <Header />
+        <span className="text-[#C2C2C2] flex justify-center font-secondary mt-8">
+          © 2025 Dokan Inc. All rights reserved.
+        </span>
+      </section>
+
+      {/* Page Background */}
       <Image
         src="/images/Pattern-Bot.svg"
         alt="pattern background"
