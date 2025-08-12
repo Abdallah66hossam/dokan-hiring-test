@@ -1,6 +1,6 @@
 export interface PaymentFormValues {
   name: string;
-  cardNumber: number | null;
+  cardNumber: string;
   expiry: string;
-  cvc: number | null;
+  cvc: string;
 }

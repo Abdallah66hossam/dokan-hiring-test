@@ -59,3 +59,17 @@ input[type="number"] {
     ),
     linear-gradient(0deg, #4a24f5, #4a24f5);
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0; /* still hide */
+  cursor: pointer;
+  position: absolute;
+  right: 0; /* stay on the right */
+  width: 1.5em; /* icon-sized area */
+  height: 100%;
+}
+input[type="date"]::-moz-focus-inner {
+  border: 0;
+}
+input[type="date"]::-moz-calendar-picker-indicator {
+  display: none;
+}

@@ -9,9 +9,9 @@ const Form: React.FC = () => {
   const dateInputRef = useRef<HTMLInputElement>(null);
   const initialValues: PaymentFormValues = {
     name: "",
-    cardNumber: null,
+    cardNumber: "",
     expiry: "",
-    cvc: null,
+    cvc: "",
   };
 
   return (
