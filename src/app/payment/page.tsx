@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./Header";
 import Method from "./Method";
+import Form from "./Form";
 
 const Payment = () => {
   return (
@@ -10,6 +11,7 @@ const Payment = () => {
         <div className="flex items-center gap-4 mt-6">
           <div className="w-[64%]">
             <Method />
+            <Form />
           </div>
         </div>
         <span className="text-[#C2C2C2] flex justify-center font-secondary mt-8">
